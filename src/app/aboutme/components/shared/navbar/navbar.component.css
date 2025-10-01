@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #212121;
+    color: white;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  nav a.active {
+    color: red;
+  }

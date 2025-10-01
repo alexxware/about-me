@@ -1,0 +1,17 @@
+import { ChangeDetectionStrategy, Component} from '@angular/core';
+import { NavbarComponent } from "../../components/shared/navbar/navbar.component";
+import { BioPageComponent } from "../../components/bio-page/bio-page.component";
+import { AboutExperienceComponent } from "../../components/about-experience/about-experience.component";
+import { AboutProjectsComponent } from "../../components/about-projects/about-projects.component";
+
+
+@Component({
+  selector: 'app-abaout-me-page',
+  imports: [NavbarComponent, BioPageComponent, AboutExperienceComponent, AboutProjectsComponent],
+  templateUrl: './abaout-me-page.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class AbaoutMePageComponent
+{
+
+}
