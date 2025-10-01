@@ -1,9 +1,9 @@
 .animAmatech {
-  opacity: 0; /* inicia invisible */
+  opacity: 0;
   transform: translateY(100px);
 }
 
 .animSmyt {
-  opacity: 0; /* inicia invisible */
+  opacity: 0;
   transform: translateY(100px);
 }

@@ -12,7 +12,7 @@ const colores = ['#2680d4', '#1c6ebb', '#1d7fdb'];
 export class BioPageComponent {
   indexColor = 0
   textColor = signal('blue');
-  imageProfile = signal('/assets/profile.jpeg')
+  imageProfile = signal('assets/profile.jpeg')
   ngOnInit ()
   {
     setInterval(() => {
