@@ -14,17 +14,18 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row items-center gap-6 p-8 my-20 md:my-10">
-        @for(tag of tags; track tag.text){
-          <div class="text-white bg-linear-to-bl from-blue-900 to-blue-950 p-8 rounded-xl shadow-lg flex flex-col items-center text-center w-90 h-80">
+      <div class="text-white grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-5 mx-10 my-20 md:my-10">
+        @for(tag of tags; track tag.text)
+        {
+          <div class="text-white h-auto bg-linear-to-bl from-blue-900 to-blue-950 rounded-xl p-10 md:p-4">
+
             <div class="w-full flex justify-end">
               <ng-container *ngComponentOutlet="tag.component"></ng-container>
             </div>
-            <div class="flex items-end h-full">
-              <p class="text-2xl sm:text-2xl md:text-xl text-left">
-                {{ tag.text }}
-              </p>
-            </div>
+            <p class="text-2xl sm:text-2xl md:text-lg text-left pt-10">
+              {{ tag.text }}
+            </p>
+
           </div>
         }
 
@@ -42,23 +43,20 @@
         <img class="w-80 h-auto" src="assets/smyt.png">
       </div>
 
-      <div class="flex flex-col md:flex-row items-center gap-6 p-8 my-20 md:my-10">
+      <div class="text-white grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-5 mx-10 my-20 md:my-10">
         @for(tag of tagsSmyt; track tag.text)
         {
-          <div class="text-white bg-linear-to-bl from-green-900 text-shadow-green-800 p-8 rounded-xl shadow-lg flex flex-col items-center text-center w-90 h-80">
+          <div class="text-white h-auto bg-linear-to-bl from-green-900 text-shadow-green-800 rounded-xl p-10 md:p-4">
+
             <div class="w-full flex justify-end">
               <ng-container *ngComponentOutlet="tag.component"></ng-container>
             </div>
-            <div class="flex items-end h-full">
-              <p class="text-2xl sm:text-2xl md:text-xl text-left">
-                {{ tag.text }}
-              </p>
-            </div>
+            <p class="text-2xl sm:text-2xl md:text-lg text-left pt-10">
+              {{ tag.text }}
+            </p>
+
           </div>
         }
-
-
-
       </div>
 
     </div>
