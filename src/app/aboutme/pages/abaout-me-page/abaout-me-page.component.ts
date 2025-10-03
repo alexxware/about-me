@@ -9,7 +9,6 @@ import { AboutProjectsComponent } from "../../components/about-projects/about-pr
   selector: 'app-abaout-me-page',
   imports: [NavbarComponent, BioPageComponent, AboutExperienceComponent, AboutProjectsComponent],
   templateUrl: './abaout-me-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AbaoutMePageComponent
 {
