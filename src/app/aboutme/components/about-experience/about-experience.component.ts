@@ -21,8 +21,8 @@ import { SvgSearchComponent } from '../svgs/svg-search/svg-search.component';
 export class AboutExperienceComponent implements AfterViewInit {
   tags: DynamicSvg[] = [
     { component: SvgWorldComponent, text: "Desarrollo de aplicaciones frontend con Angular, TypeScript y Bootstrap." },
-    { component: SvgGearComponent, text: "Creación y mantenimiento de aplicaciones .NET Framework y Core con arquitectura MVC." },
-    { component: SvgDatabaseComponent, text: "Planificación, creación y gestión de bases de datos relacionales con SQL Server." },
+    { component: SvgGearComponent, text: "Migración de aplicaciones ASP.NET a aplicaciones .Net Framework usando entornos de pruebas y desplegando a producción." },
+    { component: SvgDatabaseComponent, text: "Creación de bases de datos y optimización de consultas SQL para bases de datos de 100,000 usuarios reales." },
     { component: SvgBranchComponent, text: "Administración y gestión de repositorio corporativo, mediante un control de versiones Team Foundation Server." }
   ]
 
